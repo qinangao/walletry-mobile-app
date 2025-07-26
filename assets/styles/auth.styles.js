@@ -23,12 +23,14 @@ export const styles = StyleSheet.create({
   input: {
     backgroundColor: COLORS.white,
     borderRadius: 12,
-    padding: 15,
+    paddingHorizontal: 15,
+    paddingVertical: 12,
     marginBottom: 16,
     borderWidth: 1,
     borderColor: COLORS.border,
     fontSize: 16,
     color: COLORS.text,
+    height: 48,
   },
   errorInput: {
     borderColor: COLORS.expense,
