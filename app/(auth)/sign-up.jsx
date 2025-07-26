@@ -36,9 +36,11 @@ export default function SignUpScreen() {
       // and capture OTP code
       setPendingVerification(true);
     } catch (err) {
-      // See https://clerk.com/docs/custom-flows/error-handling
-      // for more info on error handling
-      console.error(JSON.stringify(err, null, 2));
+      if (err.errors?.[0]?.message) {
+        setError(err.errors[0].message);
+      } else {
+        setError(err.message || "An unexpected error occurred.");
+      }
     }
   };
 
@@ -63,9 +65,11 @@ export default function SignUpScreen() {
         console.error(JSON.stringify(signUpAttempt, null, 2));
       }
     } catch (err) {
-      // See https://clerk.com/docs/custom-flows/error-handling
-      // for more info on error handling
-      console.error(JSON.stringify(err, null, 2));
+      if (err.errors?.[0].code === "form_identifier_exists") {
+        setError("This email already exists. Please try a different email.");
+      } else {
+        setError("An error occurred.Please try again.");
+      }
     }
   };
 
@@ -108,6 +112,7 @@ export default function SignUpScreen() {
         <Image
           source={require("../../assets/images/revenue-i2.png")}
           style={styles.illustration}
+          contentFit="contain"
         />
         <Text style={styles.title}>Create Account</Text>
 
