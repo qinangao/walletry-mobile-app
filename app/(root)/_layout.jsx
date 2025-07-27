@@ -5,7 +5,7 @@ import { Stack } from "expo-router/stack";
 function Layout() {
   const { isSignedIn } = useUser();
 
-  if (!isSignedIn) return <Redirect href={"/sign-in"} />;
+  if (!isSignedIn) return <Redirect href={"/landing"} />;
   return <Stack screenOptions={{ headerShown: false }} />;
 }
 
