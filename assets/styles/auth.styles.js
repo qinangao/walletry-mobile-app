@@ -2,23 +2,39 @@ import { StyleSheet } from "react-native";
 import { COLORS } from "../../constants/colors";
 
 export const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+  },
   container: {
     flex: 1,
-    backgroundColor: COLORS.background,
-    padding: 20,
     justifyContent: "center",
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+    backgroundColor: "transparent",
   },
-  illustration: {
-    width: "100%",
-    height: 310,
-    resizeMode: "contain",
+
+  card: {
+    backgroundColor: "rgba(255, 255, 255, 0.35)", // semi-transparent white
+    borderRadius: 24,
+    padding: 24,
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.3)", // soft edge
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: -2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 6,
+    overflow: "hidden",
   },
+
   title: {
     fontSize: 32,
     fontWeight: "bold",
     color: COLORS.text,
-    marginVertical: 15,
     textAlign: "center",
+    marginBottom: 50,
   },
   input: {
     backgroundColor: COLORS.white,
@@ -36,7 +52,7 @@ export const styles = StyleSheet.create({
     borderColor: COLORS.expense,
   },
   button: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.navy,
     borderRadius: 12,
     padding: 16,
     alignItems: "center",
@@ -59,7 +75,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
   },
   linkText: {
-    color: COLORS.primary,
+    color: COLORS.navy,
     fontSize: 16,
     fontWeight: "600",
   },
