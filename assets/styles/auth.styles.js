@@ -52,7 +52,7 @@ export const styles = StyleSheet.create({
     borderColor: COLORS.expense,
   },
   button: {
-    backgroundColor: COLORS.navy,
+    backgroundColor: COLORS.shadow,
     borderRadius: 12,
     padding: 16,
     alignItems: "center",

@@ -26,17 +26,18 @@ export const styles = StyleSheet.create({
   headerLogo: {
     width: 75,
     height: 75,
+    marginRight: 5,
   },
   welcomeContainer: {
     flex: 1,
   },
   welcomeText: {
-    fontSize: 14,
+    fontSize: 15,
     color: COLORS.textLight,
-    marginBottom: 2,
+    marginBottom: 6,
   },
   usernameText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "600",
     color: COLORS.text,
   },
