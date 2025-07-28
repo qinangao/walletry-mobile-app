@@ -51,7 +51,7 @@ export const styles = StyleSheet.create({
     color: COLORS.text,
   },
   addButton: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.income,
     paddingHorizontal: 16,
     paddingVertical: 10,
     borderRadius: 24,
@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
   logoutButton: {
     padding: 10,
     borderRadius: 20,
-    backgroundColor: COLORS.card,
+    backgroundColor: COLORS.primary,
     shadowColor: COLORS.shadow,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.05,
@@ -229,7 +229,7 @@ export const styles = StyleSheet.create({
     lineHeight: 20,
   },
   emptyStateButton: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.shadow,
     flexDirection: "row",
     alignItems: "center",
     paddingVertical: 10,
