@@ -3,6 +3,7 @@ import { ClerkProvider, useAuth } from "@clerk/clerk-expo";
 import { tokenCache } from "@clerk/clerk-expo/token-cache";
 import { Slot, useRouter, useSegments } from "expo-router";
 import { useEffect } from "react";
+import { StatusBar } from "react-native";
 
 const InitialLayout = () => {
   const { isLoaded, isSignedIn } = useAuth();
@@ -36,6 +37,7 @@ export default function RootLayout() {
   return (
     <ClerkProvider tokenCache={tokenCache}>
       <InitialLayout />
+      <StatusBar style="light" />
     </ClerkProvider>
   );
 }
