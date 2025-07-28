@@ -1,6 +1,5 @@
 import { useSignUp } from "@clerk/clerk-expo";
 import { Ionicons } from "@expo/vector-icons";
-import { Image } from "expo-image";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import {
@@ -120,11 +119,6 @@ export default function SignUpScreen() {
         extraHeight={150}
       >
         <View style={styles.container}>
-          <Image
-            source={require("../../assets/images/revenue-i2.png")}
-            style={styles.illustration}
-            contentFit="contain"
-          />
           <Text style={styles.title}>Create an account</Text>
           <View style={styles.card}>
             {error ? (
