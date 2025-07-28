@@ -1,8 +1,6 @@
 import { useCallback, useState } from "react";
 import { Alert } from "react-native";
-
-const API_URL = "https://expense-tracker-backend-pdug.onrender.com/api";
-// const API_URL = "http://localhost:5001/api";
+import { API_URL } from "../constants/api";
 
 export function useTransactions(userId) {
   const [transactions, setTransactions] = useState([]);
