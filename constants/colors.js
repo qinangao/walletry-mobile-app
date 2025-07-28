@@ -15,6 +15,7 @@ const defaultTheme = {
 
 export const THEMES = {
   default: defaultTheme,
+  // ocean: oceanTheme,
 };
 
 export const COLORS = THEMES.default;
