@@ -53,7 +53,7 @@ export default function Page() {
 
   return (
     <ImageBackground
-      source={require("../../assets/images/landing.png")}
+      source={require("../../assets/images/sign-in.png")}
       style={styles.background}
       resizeMode="cover"
     >
