@@ -79,7 +79,7 @@ export default function SignUpScreen() {
   };
   return (
     <ImageBackground
-      source={require("../../assets/images/sign-up.png")}
+      source={require("../../assets/images/sign-up.webp")}
       style={styles.background}
       resizeMode="cover"
     >

@@ -12,7 +12,7 @@ export default function Landing() {
 
   return (
     <ImageBackground
-      source={require("@/assets/images/landing.png")}
+      source={require("@/assets/images/landing.webp")}
       style={styles.background}
       resizeMode="cover"
     >
